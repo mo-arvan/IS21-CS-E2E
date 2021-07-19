@@ -1,4 +1,4 @@
-This is the Espnet based End2End baseline script for Subtask 2 - Code Switch ASR
+This is the Espnet based End2End KARI sumission script for Subtask 2 - Code Switch ASR
 
 ### Software Setup Instructions
 This baseline is compiled for Espnet ( Version 1 , Release 0.9.7). 

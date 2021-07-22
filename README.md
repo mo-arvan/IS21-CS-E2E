@@ -9,17 +9,16 @@ To install the requirements:
 `pip install -r requirements.txt`
 
 
-###  Baseline Setup Instructions
-Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask2-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/is21-subtask2-E2E/asr1/` folder in your Espnet installation, using the below commands 
+###  Hi-En-CS Setup Instructions
+Thereafter, please clone this repository to your local system and navigate to this folder, `IS21-CS-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/` folder in your Espnet installation, using the below commands 
 
     cd espnet/egs
-    mkdir -p is21-subtask2-E2E/asr1
-    cp -r <Your Download Folder> espnet/egs/is21-subtask2-E2E/asr1
+    cp -r <Your Download Folder> espnet/egs/
     
 Copy utils/ and steps/ directory from espnet/egs  
 
-    cp -r espnet/egs/librispeech/asr/steps espnet/egs/is21-subtask2-E2E/asr1/steps 
-    cp -r espnet/egs/librispeech/asr/utils espnet/egs/is21-subtask2-E2E/asr1/utils 
+    cp -r espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/Hi-En/steps 
+    cp -r espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/Hi-En/utils 
 
 
     

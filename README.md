@@ -1,8 +1,12 @@
 This is the Espnet based End2End KARI sumission script for Subtask 2 - Code Switch ASR
 
 ### Software Setup Instructions
-This baseline is compiled for Espnet ( Version 1 , Release 0.9.7). 
+This baseline is compiled for Espnet ( Version 1 , Release 0.9.6). 
 For installation follow the instruction here: https://espnet.github.io/espnet/installation.html
+To install the requirements:
+
+`pip install -r requirements.txt`
+
 
 ###  Baseline Setup Instructions
 Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask2-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/is21-subtask2-E2E/asr1/` folder in your Espnet installation, using the below commands 

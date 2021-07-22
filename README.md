@@ -17,9 +17,13 @@ Thereafter, please clone this repository to your local system and navigate to th
     
 Copy utils/ and steps/ directory from espnet/egs  
 
-    cp -r espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/Hi-En/steps 
-    cp -r espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/Hi-En/utils 
+    cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/Hi-En/steps 
+    cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/Hi-En/utils 
 
+###  Bn-En-CS Setup Instructions
+
+	cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/Bn-En/steps 	
+	cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/Bn-En/utils 
 
     
 ### Data Setup Instructions

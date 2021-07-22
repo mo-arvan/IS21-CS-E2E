@@ -1,7 +1,8 @@
 This is the Espnet based End2End KARI sumission script for Subtask 2 - Code Switch ASR
 
 ### Software Setup Instructions
-This baseline is compiled for Espnet ( Version 1 , Release 0.9.6). 
+This models are compiled for Espnet ( Version 1 , Release 0.9.6). 
+python version: `3.7.10 [GCC 7.5.0]`
 For installation follow the instruction here: https://espnet.github.io/espnet/installation.html
 To install the requirements:
 

@@ -43,30 +43,18 @@ Copy utils/ and steps/ directory from espnet/egs
 
 where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the right paths. If it is correctly setup, replace `old_wavscp` with `new_wavscp`  i.e.  `data/train/wav.scp`  should contain the right paths (same for  `data/test/wav.scp`).`
 
+
 ### Models Setup Instructions
 
-Download the Hindi-CS and Bengali-CS models, and extract then in `models` folder
+	Download the Hindi-CS and Bengali-CS models, and extract then in `models` folder
 
-### Feature Extraction 
+	Hindi-CS: https://drive.google.com/file/d/1nsLhX6cIVX9t-a0heo5LMAtidsgXdGuF/view?usp=sharing
+	Bengali-CS: 
 
-To extract features run the following commands: 
 
-     ./run.sh --stage 1 --stop_stage 1 --nj <#no of jobs> 
-     ./run.sh --stage 2 --stop_stage 2 --nj <#no of jobs> 
+### Runiing the model
 
-### Language Model Training 
-
-    ./run.sh --stage 3 --stop_stage 3 --ngpu <no. of gpu's,  default 4> 
-
-### Acoustic Model Training 
-
-    ./run.sh --stage 4 --stop_stage 4 --ngpu <no. of gpu's,  default 4>
-
-### Decoding 
-
-    ./run.sh --stage 5  
-
-For more details on run.sh, please refer [Espnet example](https://espnet.github.io/espnet/tutorial.html) 
+     ./run.sh --stage 1 --stop_stage 3 --nj <#no of jobs> --model <hi_cs|bn_cs>
 
 ### Results 
 Following WER were obtained using the above recipe on Test Set: 

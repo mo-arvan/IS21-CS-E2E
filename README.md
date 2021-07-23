@@ -48,10 +48,12 @@ where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the r
 
 	Download the Hindi-CS and Bengali-CS models, and extract then in `models` folder
 
-	Hindi-CS: https://drive.google.com/file/d/1nsLhX6cIVX9t-a0heo5LMAtidsgXdGuF/view?usp=sharing
-	Bengali-CS: https://drive.google.com/file/d/1zQZkIPxmzTnLCx_6XLgYdKN-SYX8HHYw/view?usp=sharing
+- Hindi-CS: https://drive.google.com/file/d/1nsLhX6cIVX9t-a0heo5LMAtidsgXdGuF/view?usp=sharing
+- Bengali-CS: https://drive.google.com/file/d/1zQZkIPxmzTnLCx_6XLgYdKN-SYX8HHYw/view?usp=sharing
 
 
 ### Runiing the model
+
+Choose either hi_cs or bn_cs model, hi_cs is the default
 
      ./run.sh --stage 1 --stop_stage 3 --nj <#no of jobs> --model <hi_cs|bn_cs>

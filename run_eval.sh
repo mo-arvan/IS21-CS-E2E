@@ -82,6 +82,7 @@ elif [ $model == 'hi_cs' ]; then
 	bpemodel=models/$model/train_unigram${nbpe}
 	cmvn=models/${model}/${cmvn.ark}
 	recog_set="hi_blind"
+fi
 #feat_dt_dir=${dumpdir}/${train_dev}/delta${do_delta}; mkdir -p ${feat_dt_dir}
 feat_ts_dir=${dumpdir}/test/delta${do_delta}; mkdir -p ${feat_ts_dir}
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then

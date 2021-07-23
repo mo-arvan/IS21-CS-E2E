@@ -13,27 +13,28 @@ To install the requirements:
 Thereafter, please clone this repository to your local system and navigate to this folder, `IS21-CS-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/` folder in your Espnet installation, using the below commands 
 
     cd espnet/egs
-    cp -r <Your Download Folder> espnet/egs/
+    mkdir IS21-CS-E2E/asr1
+    cp -r <Your Download Folder>/* espnet/egs/IS21-CS-E2E/asr1
     
 Copy utils/ and steps/ directory from espnet/egs  
 
-    cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/Hi-En/steps 
-    cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/Hi-En/utils 
+    cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/asr1/steps 
+    cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/asr1/utils 
 
 ###  Bn-En-CS Setup Instructions
 
-	cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/Bn-En/steps 	
-	cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/Bn-En/utils 
+	cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/asr1/steps 	
+	cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/asr1/utils 
 
     
 ### Data Setup Instructions
 1. Copy the transcripts folder to data directory 
 
-	    cp  -r  < path to transcripts download folder>/transcripts/train  data/train
-	    cp  -r  < path to transcripts download folder>/transcripts/test  data/test 
+	    cp  -r  < path to transcripts download folder>/bangali/files  data/bn_blind
+	    cp  -r  < path to transcripts download folder>/hindi/files  data/hi_blind
 
 2. Changing paths in wav.scp
-`wav.scp`  in  `data/train/wav.scp`  and  `data/test/wav.scp`  contains lines of the following form:
+`wav.scp`  in  `data/bn_blind/wav.scp`  and  `data/hi_blind/wav.scp`  contains lines of the following form:
 
     ```
     072Wvm62KcQqRBNa 072Wvm62KcQqRBNa.wav
@@ -46,6 +47,7 @@ Copy utils/ and steps/ directory from espnet/egs
         mv new_wavscp old_wavscp
 
 where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the right paths. If it is correctly setup, replace `old_wavscp` with `new_wavscp`  i.e.  `data/train/wav.scp`  should contain the right paths (same for  `data/test/wav.scp`).`
+
 
 ### Feature Extraction 
 

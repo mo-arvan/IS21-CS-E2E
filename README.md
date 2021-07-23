@@ -55,8 +55,3 @@ where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the r
 ### Runiing the model
 
      ./run.sh --stage 1 --stop_stage 3 --nj <#no of jobs> --model <hi_cs|bn_cs>
-
-### Results 
-Following WER were obtained using the above recipe on Test Set: 
-Ben-Eng(WER): 37.2 (Trained for 36 epochs)
-Hin-Eng(WER):  27.7 (Trained for 29 epochs)

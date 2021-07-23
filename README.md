@@ -9,7 +9,7 @@ To install the requirements:
 `pip install -r requirements.txt`
 
 
-###  Hi-En-CS Setup Instructions
+### Setup Instructions
 Thereafter, please clone this repository to your local system and navigate to this folder, `IS21-CS-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/` folder in your Espnet installation, using the below commands 
 
     cd espnet/egs
@@ -20,11 +20,6 @@ Copy utils/ and steps/ directory from espnet/egs
 
     cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/asr1/steps 
     cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/asr1/utils 
-
-###  Bn-En-CS Setup Instructions
-
-	cp -P espnet/egs/librispeech/asr/steps espnet/egs/IS21-CS-E2E/asr1/steps 	
-	cp -P espnet/egs/librispeech/asr/utils espnet/egs/IS21-CS-E2E/asr1/utils 
 
     
 ### Data Setup Instructions
@@ -48,6 +43,9 @@ Copy utils/ and steps/ directory from espnet/egs
 
 where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the right paths. If it is correctly setup, replace `old_wavscp` with `new_wavscp`  i.e.  `data/train/wav.scp`  should contain the right paths (same for  `data/test/wav.scp`).`
 
+### Models Setup Instructions
+
+Download the Hindi-CS and Bengali-CS models, and extract then in `models` folder
 
 ### Feature Extraction 
 

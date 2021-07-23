@@ -64,7 +64,7 @@ set -u
 set -o pipefail
 
 #train_dev=test
-recog_set="blind"
+
 
 # loading the model with its related files
 
@@ -74,13 +74,14 @@ if [ $model == 'bn_cs' ]; then
 	dict=$model/train_unigram${nbpe}_units.txt
 	bpemodel=$model/train_unigram${nbpe}
 	cmvn=models/${model}/${cmvn.ark}
+	recog_set="bn_blind"
 elif [ $model == 'hi_cs' ]; then
 	rec_model=models/${model}/model.val3.avg.best
 	nbpe=1000 
 	dict=$model/train_unigram${nbpe}_units.txt
 	bpemodel=$model/train_unigram${nbpe}
 	cmvn=models/${model}/${cmvn.ark}
-	
+	recog_set="hi_blind"
 #feat_dt_dir=${dumpdir}/${train_dev}/delta${do_delta}; mkdir -p ${feat_dt_dir}
 feat_ts_dir=${dumpdir}/test/delta${do_delta}; mkdir -p ${feat_ts_dir}
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then

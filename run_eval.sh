@@ -71,15 +71,15 @@ set -o pipefail
 if [ $model == 'bn_cs' ]; then
 	rec_model=models/${model}/model.val3.avg.best
 	nbpe=1000
-	dict=$model/train_unigram${nbpe}_units.txt
-	bpemodel=$model/train_unigram${nbpe}
+	dict=models/$model/train_unigram${nbpe}_units.txt
+	bpemodel=models/$model/train_unigram${nbpe}
 	cmvn=models/${model}/${cmvn.ark}
 	recog_set="bn_blind"
 elif [ $model == 'hi_cs' ]; then
 	rec_model=models/${model}/model.val3.avg.best
 	nbpe=1000 
-	dict=$model/train_unigram${nbpe}_units.txt
-	bpemodel=$model/train_unigram${nbpe}
+	dict=models/$model/train_unigram${nbpe}_units.txt
+	bpemodel=models/$model/train_unigram${nbpe}
 	cmvn=models/${model}/${cmvn.ark}
 	recog_set="hi_blind"
 #feat_dt_dir=${dumpdir}/${train_dev}/delta${do_delta}; mkdir -p ${feat_dt_dir}

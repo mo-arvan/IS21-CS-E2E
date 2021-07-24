@@ -1,4 +1,4 @@
-This is the Espnet based End2End KARI sumission (4th place)for Subtask 2 - Code Switch ASR https://navana-tech.github.io/IS21SS-indicASRchallenge/challenge_details.html
+This is the Espnet based End2End KARI sumission (4th place) for Subtask 2 - Code Switch ASR https://navana-tech.github.io/IS21SS-indicASRchallenge/challenge_details.html
 
 ### Software Setup Instructions
 This models are compiled for Espnet ( Version 1 , Release 0.9.6). 

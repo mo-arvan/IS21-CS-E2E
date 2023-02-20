@@ -1,0 +1,16 @@
+FROM espnet/espnet:gpu-latest
+
+
+COPY requirements.txt /opt/app/requirements.txt
+
+WORKDIR /opt/app
+
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub && \ 
+	apt-get update && apt-get install -y tmux
+
+
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+WORKDIR /workspace
+
